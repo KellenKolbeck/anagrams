@@ -8,9 +8,10 @@ class String
         anagram_list.push(words)
       end
     end
-    if !anagram_list
-      "No anagrams found"
+    if anagram_list.any?()
+      anagram_list.join(", ")
+    else
+      "No anagrams found :("
     end
-    anagram_list
   end
 end
